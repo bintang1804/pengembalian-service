@@ -48,7 +48,7 @@ public class PengembalianService {
     public ResponseTemplateVO getPengembalian(Long pengembalianId){
         ResponseTemplateVO vo = new ResponseTemplateVO();
         Pengembalian pengembalian = pengembalianRepository.findByPengembalianId(pengembalianId);
-        ResponseTemplateVOPinjam peminjaman = restTemplate.getForObject("http://localhost:8050/peminjaman/"
+        ResponseTemplateVOPinjam peminjaman = restTemplate.getForObject("http://localhost:8001/peminjaman/"
                 +pengembalian.getPeminjamanId(), ResponseTemplateVOPinjam.class);
         vo.setPengembalian(pengembalian);
         vo.setPeminjaman(peminjaman.getPeminjaman());

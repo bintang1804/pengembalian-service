@@ -15,10 +15,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Peminjaman {
-    private Long peminjamanId;
+public class Buku {
     private Long bukuId;
-    private Long anggotaId;
-    private String tglPinjam;
-    private String tglKembali;
+    private String kode;
+    private String judul;
+    private String penerbit;
+    private String tahunTerbit;
 }

@@ -4,6 +4,7 @@
  */
 package com.bintang.pengembalian.service.vo;
 
+import com.bintang.pengembalian.service.entity.Pengembalian;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,12 +14,9 @@ import lombok.NoArgsConstructor;
  * @author Bintang
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class Peminjaman {
-    private Long peminjamanId;
-    private Long bukuId;
-    private Long anggotaId;
-    private String tglPinjam;
-    private String tglKembali;
+@AllArgsConstructor
+public class ResponseTemplateVO {
+    private Pengembalian pengembalian;
+    private Peminjaman peminjaman; 
 }

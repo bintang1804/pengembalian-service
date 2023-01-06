@@ -7,7 +7,6 @@ package com.bintang.pengembalian.service.vo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 /**
  *
  * @author Bintang
@@ -15,10 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Peminjaman {
-    private Long peminjamanId;
-    private Long bukuId;
+public class Anggota {
     private Long anggotaId;
-    private String tglPinjam;
-    private String tglKembali;
+    private String nama;
+    private String alamat;
 }

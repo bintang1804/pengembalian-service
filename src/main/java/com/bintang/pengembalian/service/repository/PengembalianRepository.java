@@ -4,7 +4,8 @@
  */
 package com.bintang.pengembalian.service.repository;
 
-import com.bintang.peminjaman.service.entity.Pengembalian;
+
+import com.bintang.pengembalian.service.entity.Pengembalian;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,7 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author Bintang
  */
 @Repository
-public interface PengembalianRepository extends JpaRepository<Pengembalian, Long> {
-
+public interface PengembalianRepository extends JpaRepository<Pengembalian, Long>{
     public Pengembalian findByPengembalianId(Long pengembalianId);
 }
